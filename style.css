@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(img/encryption.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 10px;
+}
+            /*VISIBLE*/
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.contenedorTextAreas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.section1Texto{
+    margin: 20px 0 30px 5%;
+}
+
+.section1Texto textarea::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.textAreaIngresarTexto {
+    width: 500px;
+    height: 420px;
+    resize: none;
+    border-radius: 5px;
+    opacity: 60%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.textAreaIngresarTexto:focus {
+    border: 3px solid #1eb3e5;
+}
+
+.infoSoloMinusculas{
+    text-align: left;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 80%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+
+.infoSoloMinusculas i {
+    margin-left: 3%;
+    color: #900D0B;
+}
+
+.infoSoloMinusculas label {
+    margin-left: 2%;
+}
+
+.btnEncDesenc {
+    display: flex;
+    justify-content: center;
+}
+
+.btnEncriptar {
+    width: 170px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 50px;
+    background-color: #1c09ef;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btnEncriptar:hover {
+    color: #1eb3e5;
+}
+
+.btnDesencriptar {
+    width: 170px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #1eb3e5;
+    border: none;
+    border-radius: 8px; 
+    color: #1c09ef;
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btnDesencriptar:hover {
+    color: #ffffff;
+}
+
+.section2Mensaje{
+   margin: 20px 5% 30px 0;
+}
+
+.textAreaMuestraMensaje {
+    width: 500px;
+    height: 420px;
+    resize: none;
+    border-radius: 5px;
+    opacity: 60%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.textAreaMuestraMensaje:focus {
+    border: 3px solid #1eb3e5;
+}
+
+.contenedorBtnCopiar {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCopiar {
+    width: 170px;
+    height: 40px;
+    background-color: #97e2e8;
+    border: none;
+    border-radius: 8px;
+    color: #1c09ef;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.btnCopiar:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    margin: 2px 0 0 0;
+}
+
+                /*NO VISIBLE*/
+
+.mensajes {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #1eb3e5;
+    display: none;
+    z-index: 100;
+}
+
+.mensajes i {
+    font-size: 5rem;
+}
+
+.mensajeNoMayus i {
+    color: #ff0400;
+}
+
+.mensajeTextoVacio i {
+    color: #ff0400;
+}
+
+.mensajeTextoCopiado i {
+    color: #01a958;
+}
+
+.botonModal {
+    width: 20%;
+    padding: 1%;
+    background-color: #97e2e8;
+    border-radius: 5px;
+    margin-top: 5%;
+    color: #1c09ef;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonModal:hover {
+    color: #ffffff;
+}

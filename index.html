@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/padlock.png">
+        <script src="https://kit.fontawesome.com/904994b1bc.js" crossorigin="anonymous"></script>
+        <title>Encriptador de Texto</title>
+
+    </head>
+
+    <body>    
+        <main>
+            <h1 class="tituloPrincipal">Encriptador de Texto</h1>
+
+            <div class="contenedorTextAreas">
+                <section class="section1Texto">
+                    <textarea class="textAreaIngresarTexto" type="text" name="ingresar-texto" placeholder="Ingrese el texto que desea Encriptar o Desencriptar " ></textarea>
+                    
+                    <!--<div class="infoSoloMinusculas">
+                        <i class="fa-solid fa-circle-info"></i>
+                         <label for="ingresar-texto">Solo se admiten letras minúsculas y sin acentos</label> 
+                    </div>-->
+                    
+                    <div class="btnEncDesenc">
+                        <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </section>
+
+                <section class="section2Mensaje" >
+                    <textarea class="textAreaMuestraMensaje" type="text" name="texto-encriptado-desencriptado" readonly></textarea>
+                    
+                    <div class="contenedorBtnCopiar">
+                        <button class="btnCopiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </section>
+            </div>        
+        </main>
+
+            <div class="mensajeNoMayus mensajes">                
+                <i class="fa-regular fa-circle-xmark"></i><br>
+                <p>¡Ingrese solo letras minúsculas y sin acentos!</p>
+                <button class="botonModal">Ok</button>
+            </div>
+
+            <div class="mensajeTextoVacio mensajes">                
+                <i class="fa-regular fa-circle-xmark"></i><br>
+                <p>¡Ingrese algún texto!</p>
+                <button class="botonModal">Ok</button>
+            </div>
+
+            <div class="mensajeTextoCopiado mensajes">
+                <i class="fa-regular fa-circle-check"></i><br>
+                <p>¡Texto copiado con exito!</p>
+                <button class="botonModal">Ok</button>
+            </div>
+       
+        <footer>
+            <p class="copyright">&copy Copyright 2022 - Desarrollado por Angel Rojas</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
